@@ -1,0 +1,23 @@
+@use '../../styles/variables' as *;
+
+.layout {
+  @include container;
+  display: grid;
+  gap: $spacing-xl;
+  padding-top: $spacing-2xl;
+  padding-bottom: $spacing-3xl;
+
+  @include responsive($breakpoint-lg) {
+    grid-template-columns: 280px 1fr;
+  }
+}
+
+.sidebar {
+  @include mobile-only {
+    order: 2;
+  }
+}
+
+.content {
+  min-width: 0;
+}

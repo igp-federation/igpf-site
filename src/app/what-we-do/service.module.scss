@@ -1,0 +1,124 @@
+@use '../../styles/variables' as *;
+
+.servicePage {
+  h1 {
+    color: $color-primary;
+    margin-bottom: $spacing-xl;
+  }
+}
+
+.section {
+  margin-bottom: $spacing-2xl;
+
+  h2 {
+    color: $color-primary;
+    font-size: $font-size-xl;
+    margin-bottom: $spacing-md;
+  }
+
+  ul {
+    margin-bottom: $spacing-md;
+
+    li {
+      margin-bottom: $spacing-sm;
+    }
+  }
+}
+
+.locationGrid {
+  display: grid;
+  gap: $spacing-md;
+
+  @include responsive($breakpoint-sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.locationCard {
+  background: $color-grey-light;
+  padding: $spacing-lg;
+  border-radius: 8px;
+
+  h3 {
+    font-size: $font-size-base;
+    color: $color-primary;
+    margin-bottom: $spacing-xs;
+  }
+
+  p {
+    font-size: $font-size-sm;
+    color: $color-secondary;
+    margin-bottom: $spacing-xs;
+  }
+}
+
+.parking {
+  display: inline-block;
+  font-size: $font-size-sm;
+  color: $color-grey;
+  font-style: italic;
+}
+
+.contactInfo {
+  background: $color-grey-light;
+  padding: $spacing-lg;
+  border-radius: 8px;
+
+  p {
+    margin-bottom: $spacing-sm;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.teamGrid {
+  display: grid;
+  gap: $spacing-md;
+
+  @include responsive($breakpoint-sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include responsive($breakpoint-lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.teamCard {
+  background: $color-grey-light;
+  padding: $spacing-lg;
+  border-radius: 8px;
+  text-align: center;
+
+  h3 {
+    font-size: $font-size-base;
+    color: $color-black;
+    margin-bottom: $spacing-xs;
+  }
+
+  p {
+    font-size: $font-size-sm;
+    color: $color-grey-dark;
+    margin-bottom: 0;
+  }
+}
+
+.infoBox {
+  background: $color-primary;
+  color: $color-white;
+  padding: $spacing-lg;
+  border-radius: 8px;
+  margin-bottom: $spacing-xl;
+
+  h3 {
+    color: $color-white;
+    margin-bottom: $spacing-sm;
+  }
+
+  p {
+    margin-bottom: 0;
+    opacity: 0.9;
+  }
+}

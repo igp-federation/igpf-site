@@ -1,0 +1,100 @@
+@use '../../styles/variables' as *;
+
+.page {
+  h1 {
+    color: $color-primary;
+    margin-bottom: $spacing-xl;
+  }
+}
+
+.intro {
+  margin-bottom: $spacing-2xl;
+}
+
+.statement {
+  font-size: $font-size-xl;
+  color: $color-primary;
+  font-weight: 600;
+  margin-bottom: $spacing-md;
+}
+
+.section {
+  margin-bottom: $spacing-2xl;
+
+  h2 {
+    color: $color-primary;
+    margin-bottom: $spacing-md;
+  }
+}
+
+.contactGrid {
+  display: grid;
+  gap: $spacing-md;
+
+  @include responsive($breakpoint-md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.contactCard {
+  background: $color-grey-light;
+  padding: $spacing-lg;
+  border-radius: 8px;
+
+  h3 {
+    font-size: $font-size-sm;
+    color: $color-grey-dark;
+    margin-bottom: $spacing-xs;
+  }
+
+  p {
+    font-weight: 600;
+    color: $color-black;
+    margin-bottom: $spacing-xs;
+  }
+
+  a {
+    font-size: $font-size-sm;
+  }
+}
+
+.linkGrid {
+  display: grid;
+  gap: $spacing-md;
+
+  @include responsive($breakpoint-sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.linkCard {
+  display: block;
+  background: $color-grey-light;
+  padding: $spacing-lg;
+  border-radius: 8px;
+  transition: all $transition-normal;
+
+  &:hover {
+    background: $color-primary;
+    text-decoration: none;
+
+    h3,
+    p {
+      color: $color-white;
+    }
+  }
+
+  h3 {
+    color: $color-primary;
+    font-size: $font-size-base;
+    margin-bottom: $spacing-xs;
+    transition: color $transition-normal;
+  }
+
+  p {
+    color: $color-grey-dark;
+    font-size: $font-size-sm;
+    margin-bottom: 0;
+    transition: color $transition-normal;
+  }
+}

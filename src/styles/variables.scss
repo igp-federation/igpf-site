@@ -1,0 +1,73 @@
+// Colors - IGPF Branding
+$color-primary: #d95d83; // IGPF Pink
+$color-primary-dark: #b84a6d;
+$color-secondary: #425563; // Dark grey
+$color-accent: #007f3b; // NHS Green
+$color-white: #ffffff;
+$color-black: #212b32;
+$color-grey-light: #f0f4f5;
+$color-grey: #768692;
+$color-grey-dark: #4c6272;
+$color-border: #d8dde0;
+
+// Typography
+$font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+$font-size-base: 16px;
+$font-size-sm: 14px;
+$font-size-lg: 18px;
+$font-size-xl: 24px;
+$font-size-2xl: 32px;
+$font-size-3xl: 48px;
+
+// Spacing
+$spacing-xs: 0.25rem;
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 1.5rem;
+$spacing-xl: 2rem;
+$spacing-2xl: 3rem;
+$spacing-3xl: 4rem;
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Container
+$container-max-width: 1200px;
+$container-padding: $spacing-md;
+
+// Transitions
+$transition-fast: 0.15s ease;
+$transition-normal: 0.3s ease;
+
+// Shadows
+$shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+$shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+// Mixins
+@mixin container {
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: 0 $container-padding;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin responsive($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin mobile-only {
+  @media (max-width: #{$breakpoint-md - 1px}) {
+    @content;
+  }
+}

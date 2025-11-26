@@ -1,0 +1,47 @@
+@use '../../styles/variables' as *;
+
+.sideNav {
+  background: $color-grey-light;
+  border-radius: 8px;
+  padding: $spacing-lg;
+}
+
+.title {
+  font-size: $font-size-base;
+  color: $color-secondary;
+  margin-bottom: $spacing-md;
+  padding-bottom: $spacing-sm;
+  border-bottom: 1px solid $color-border;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  display: block;
+  padding: $spacing-sm $spacing-md;
+  color: $color-secondary;
+  border-radius: 4px;
+  transition: all $transition-fast;
+  font-size: $font-size-sm;
+  margin-bottom: $spacing-xs;
+
+  &:hover {
+    background: $color-white;
+    color: $color-primary;
+    text-decoration: none;
+  }
+
+  &.active {
+    background: $color-primary;
+    color: $color-white;
+
+    &:hover {
+      background: $color-primary-dark;
+      color: $color-white;
+    }
+  }
+}

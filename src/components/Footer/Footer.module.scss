@@ -1,0 +1,96 @@
+@use '../../styles/variables' as *;
+
+.footer {
+  background: $color-grey-light;
+  border-top: 1px solid $color-border;
+  padding: $spacing-2xl 0;
+  margin-top: auto;
+}
+
+.container {
+  @include container;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xl;
+  padding-bottom: $spacing-xl;
+  border-bottom: 1px solid $color-border;
+
+  @include responsive($breakpoint-md) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.branding {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-md;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.nhsBadge {
+  height: 35px;
+  width: auto;
+}
+
+.nav {
+  @include responsive($breakpoint-md) {
+    text-align: right;
+  }
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-sm $spacing-lg;
+
+  @include responsive($breakpoint-md) {
+    justify-content: flex-end;
+  }
+}
+
+.navLink {
+  color: $color-secondary;
+  font-size: $font-size-sm;
+
+  &:hover {
+    color: $color-primary;
+  }
+}
+
+.bottom {
+  padding-top: $spacing-xl;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-md;
+
+  @include responsive($breakpoint-md) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.info {
+  p {
+    font-size: $font-size-sm;
+    color: $color-grey-dark;
+    margin-bottom: $spacing-xs;
+  }
+}
+
+.copyright {
+  font-size: $font-size-sm;
+  color: $color-grey;
+}

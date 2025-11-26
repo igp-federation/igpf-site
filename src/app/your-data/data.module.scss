@@ -1,0 +1,85 @@
+@use '../../styles/variables' as *;
+
+.dataPage {
+  h1 {
+    color: $color-primary;
+    margin-bottom: $spacing-xl;
+  }
+}
+
+.section {
+  margin-bottom: $spacing-2xl;
+
+  h2 {
+    color: $color-primary;
+    font-size: $font-size-xl;
+    margin-bottom: $spacing-md;
+  }
+
+  h3 {
+    color: $color-secondary;
+    font-size: $font-size-lg;
+    margin-top: $spacing-lg;
+    margin-bottom: $spacing-sm;
+  }
+
+  ul {
+    margin-bottom: $spacing-md;
+
+    li {
+      margin-bottom: $spacing-sm;
+    }
+  }
+}
+
+.infoBox {
+  background: $color-grey-light;
+  padding: $spacing-lg;
+  border-radius: 8px;
+  margin-bottom: $spacing-lg;
+
+  h3 {
+    margin-top: 0;
+    color: $color-primary;
+  }
+}
+
+.contactBox {
+  background: $color-primary;
+  color: $color-white;
+  padding: $spacing-lg;
+  border-radius: 8px;
+
+  h3 {
+    color: $color-white;
+    margin-top: 0;
+  }
+
+  a {
+    color: $color-white;
+    text-decoration: underline;
+  }
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: $spacing-lg;
+
+  th,
+  td {
+    padding: $spacing-md;
+    text-align: left;
+    border-bottom: 1px solid $color-border;
+  }
+
+  th {
+    background: $color-grey-light;
+    font-weight: 600;
+    color: $color-secondary;
+  }
+
+  td {
+    color: $color-black;
+  }
+}

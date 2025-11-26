@@ -1,0 +1,101 @@
+@use '../../styles/variables' as *;
+
+.page {
+  padding: $spacing-2xl 0 $spacing-3xl;
+}
+
+.container {
+  @include container;
+}
+
+.page h1 {
+  color: $color-primary;
+  margin-bottom: $spacing-xl;
+}
+
+.grid {
+  display: grid;
+  gap: $spacing-xl;
+  margin-bottom: $spacing-2xl;
+
+  @include responsive($breakpoint-lg) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.contactInfo {
+  h2 {
+    color: $color-primary;
+    margin-bottom: $spacing-lg;
+  }
+}
+
+.contactCard {
+  background: $color-grey-light;
+  padding: $spacing-lg;
+  border-radius: 8px;
+  margin-bottom: $spacing-md;
+
+  h3 {
+    font-size: $font-size-base;
+    color: $color-primary;
+    margin-bottom: $spacing-sm;
+  }
+
+  p {
+    margin-bottom: $spacing-xs;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  address {
+    font-style: normal;
+    line-height: 1.8;
+  }
+}
+
+.hours {
+  font-size: $font-size-sm;
+  color: $color-grey;
+}
+
+.feedback {
+  h2 {
+    color: $color-primary;
+    margin-bottom: $spacing-md;
+  }
+
+  h3 {
+    color: $color-secondary;
+    font-size: $font-size-lg;
+    margin-top: $spacing-lg;
+    margin-bottom: $spacing-sm;
+  }
+
+  ul {
+    li {
+      margin-bottom: $spacing-sm;
+    }
+  }
+}
+
+.companyInfo {
+  background: $color-grey-light;
+  padding: $spacing-xl;
+  border-radius: 8px;
+
+  h2 {
+    color: $color-primary;
+    margin-bottom: $spacing-md;
+  }
+
+  p {
+    margin-bottom: $spacing-xs;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

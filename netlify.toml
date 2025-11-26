@@ -1,4 +1,0 @@
-[dev]
-  command = "npm run start"
-  port = 5000
-  publish = "build"

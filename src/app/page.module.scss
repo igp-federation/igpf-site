@@ -1,0 +1,163 @@
+@use '../styles/variables' as *;
+
+.page {
+  min-height: 100vh;
+}
+
+.container {
+  @include container;
+}
+
+// Hero Section
+.hero {
+  position: relative;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  background: $color-primary;
+
+  @include responsive($breakpoint-md) {
+    min-height: 500px;
+  }
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  @include container;
+  padding-top: $spacing-3xl;
+  padding-bottom: $spacing-3xl;
+
+  h1 {
+    color: $color-white;
+    max-width: 600px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.heroImage {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      90deg,
+      rgba($color-primary, 0.85) 0%,
+      rgba($color-primary, 0.4) 100%
+    );
+  }
+}
+
+// Welcome Section
+.welcome {
+  padding: $spacing-3xl 0;
+  background: $color-white;
+
+  h2 {
+    margin-bottom: $spacing-lg;
+    color: $color-primary;
+  }
+
+  p {
+    font-size: $font-size-lg;
+    max-width: 800px;
+  }
+}
+
+// Services Section
+.services {
+  padding: $spacing-3xl 0;
+  background: $color-grey-light;
+
+  h2 {
+    margin-bottom: $spacing-xl;
+    text-align: center;
+    color: $color-primary;
+  }
+}
+
+.serviceGrid {
+  display: grid;
+  gap: $spacing-lg;
+  grid-template-columns: 1fr;
+
+  @include responsive($breakpoint-sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include responsive($breakpoint-lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.serviceCard {
+  background: $color-white;
+  padding: $spacing-xl;
+  border-radius: 8px;
+  box-shadow: $shadow-sm;
+  transition:
+    box-shadow $transition-normal,
+    transform $transition-normal;
+
+  &:hover {
+    box-shadow: $shadow-md;
+    transform: translateY(-2px);
+  }
+
+  h3 {
+    color: $color-primary;
+    margin-bottom: $spacing-sm;
+    font-size: $font-size-lg;
+  }
+
+  p {
+    color: $color-secondary;
+    font-size: $font-size-sm;
+    margin-bottom: 0;
+  }
+}
+
+// Partners Section
+.partners {
+  padding: $spacing-3xl 0;
+  background: $color-white;
+
+  h2 {
+    margin-bottom: $spacing-md;
+    text-align: center;
+    color: $color-primary;
+  }
+}
+
+.partnersIntro {
+  text-align: center;
+  margin-bottom: $spacing-xl;
+  color: $color-secondary;
+}
+
+.partnerList {
+  display: grid;
+  gap: $spacing-md;
+  grid-template-columns: 1fr;
+
+  @include responsive($breakpoint-sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include responsive($breakpoint-lg) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.partnerCard {
+  background: $color-grey-light;
+  padding: $spacing-lg;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+  color: $color-secondary;
+}

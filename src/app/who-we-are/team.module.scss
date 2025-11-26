@@ -1,0 +1,82 @@
+@use '../../styles/variables' as *;
+
+.teamPage {
+  h1 {
+    color: $color-primary;
+    margin-bottom: $spacing-xl;
+  }
+}
+
+.intro {
+  font-size: $font-size-lg;
+  color: $color-secondary;
+  margin-bottom: $spacing-2xl;
+  max-width: 700px;
+}
+
+.teamGrid {
+  display: grid;
+  gap: $spacing-lg;
+
+  @include responsive($breakpoint-sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include responsive($breakpoint-lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.memberCard {
+  background: $color-grey-light;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow $transition-normal;
+
+  &:hover {
+    box-shadow: $shadow-md;
+  }
+}
+
+.memberImage {
+  width: 100%;
+  aspect-ratio: 1;
+  background: $color-border;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $color-grey;
+  font-size: $font-size-sm;
+}
+
+.memberInfo {
+  padding: $spacing-lg;
+
+  h3 {
+    color: $color-black;
+    font-size: $font-size-base;
+    margin-bottom: $spacing-xs;
+  }
+
+  .role {
+    color: $color-primary;
+    font-size: $font-size-sm;
+    font-weight: 500;
+    margin-bottom: $spacing-sm;
+  }
+
+  .bio {
+    color: $color-grey-dark;
+    font-size: $font-size-sm;
+    margin-bottom: 0;
+  }
+}
+
+.section {
+  margin-bottom: $spacing-2xl;
+
+  h2 {
+    color: $color-primary;
+    margin-bottom: $spacing-lg;
+  }
+}

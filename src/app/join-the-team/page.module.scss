@@ -1,0 +1,87 @@
+@use '../../styles/variables' as *;
+
+.page {
+  padding: $spacing-2xl 0 $spacing-3xl;
+}
+
+.container {
+  @include container;
+}
+
+.page h1 {
+  color: $color-primary;
+  margin-bottom: $spacing-xl;
+}
+
+.intro {
+  margin-bottom: $spacing-2xl;
+
+  p {
+    font-size: $font-size-lg;
+    color: $color-secondary;
+    max-width: 700px;
+  }
+}
+
+.section {
+  margin-bottom: $spacing-2xl;
+
+  h2 {
+    color: $color-primary;
+    margin-bottom: $spacing-md;
+  }
+
+  ul {
+    li {
+      margin-bottom: $spacing-sm;
+    }
+  }
+}
+
+.roleGrid {
+  display: grid;
+  gap: $spacing-sm;
+  margin-top: $spacing-md;
+
+  @include responsive($breakpoint-sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include responsive($breakpoint-md) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.roleCard {
+  background: $color-grey-light;
+  padding: $spacing-md;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+  color: $color-secondary;
+}
+
+.contactBox {
+  background: $color-primary;
+  color: $color-white;
+  padding: $spacing-xl;
+  border-radius: 8px;
+
+  h2 {
+    color: $color-white;
+    margin-bottom: $spacing-md;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  a {
+    color: $color-white;
+    text-decoration: underline;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
