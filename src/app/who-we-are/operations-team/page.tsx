@@ -16,7 +16,7 @@ export default function OperationsTeamPage() {
       </p>
 
       <section className={styles.section}>
-        <h2>What We Do</h2>
+        <h2>What we do</h2>
         <ul>
           <li>Service coordination and delivery</li>
           <li>Clinic management and scheduling</li>
@@ -28,7 +28,7 @@ export default function OperationsTeamPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Our Approach</h2>
+        <h2>Our approach</h2>
         <p>
           We work closely with clinical teams, GP practices, and partner organisations to ensure
           services run efficiently and patients receive the care they need. Our team is committed to

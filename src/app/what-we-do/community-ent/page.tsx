@@ -20,7 +20,7 @@ export default function CommunityENTPage() {
       <h1>Community ENT</h1>
 
       <section className={styles.section}>
-        <h2>About the Service</h2>
+        <h2>About the service</h2>
         <p>
           Islington Community Ear, Nose and Throat Service is the longest running service that
           Islington GP Federation (IGPF) manages. It provides specialist ear, nose and throat (ENT)
@@ -30,7 +30,7 @@ export default function CommunityENTPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Clinical Staff</h2>
+        <h2>Clinical staff</h2>
         <ul>
           <li>
             <strong>General Practitioners with Extended Roles (GPwER):</strong> GPs with additional
@@ -59,7 +59,7 @@ export default function CommunityENTPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Clinic Locations</h2>
+        <h2>Clinic locations</h2>
         <ul>
           {clinicLocations.map((location) => (
             <li key={location}>{location}</li>
@@ -68,7 +68,7 @@ export default function CommunityENTPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Contact Us</h2>
+        <h2>Contact us</h2>
         <div className={styles.contactInfo}>
           <p>
             <strong>Email:</strong> <a href="mailto:nclicb.icents@nhs.net">nclicb.icents@nhs.net</a>
@@ -80,7 +80,7 @@ export default function CommunityENTPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Patient Resources</h2>
+        <h2>Patient resources</h2>
         <p>
           For more information about ENT conditions and procedures, visit{' '}
           <a

@@ -13,7 +13,7 @@ export default function WomensHealthHubPage() {
       <h1>Women&apos;s Health Hub</h1>
 
       <section className={styles.section}>
-        <h2>About the Service</h2>
+        <h2>About the service</h2>
         <p>
           The Women&apos;s Health Hub is part of the North Central London pilot programme, providing
           comprehensive women&apos;s health services in community settings. This initiative aims to
@@ -22,7 +22,7 @@ export default function WomensHealthHubPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Services Available</h2>
+        <h2>Services available</h2>
         <ul>
           <li>Menopause assessment and management</li>
           <li>Contraception advice and fitting</li>
@@ -34,7 +34,7 @@ export default function WomensHealthHubPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>How to Access</h2>
+        <h2>How to access</h2>
         <p>
           Patients can be referred by their GP or may be able to self-refer for certain services.
           Please speak to your GP practice for more information about accessing the Women&apos;s

@@ -16,7 +16,7 @@ export default function TrainingHubTeamPage() {
       </p>
 
       <section className={styles.section}>
-        <h2>Our Team</h2>
+        <h2>Our team</h2>
         <p>
           Our Training Hub team includes training coordinators, programme managers, and education
           specialists who work to develop and support the primary care workforce in Islington.
@@ -24,7 +24,7 @@ export default function TrainingHubTeamPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>What We Do</h2>
+        <h2>What we do</h2>
         <ul>
           <li>Coordinate training programmes for practice staff</li>
           <li>Support apprenticeships and new roles</li>
@@ -36,7 +36,7 @@ export default function TrainingHubTeamPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Working with Partners</h2>
+        <h2>Working with partners</h2>
         <p>
           We work closely with Health Education England, local universities, and other training
           providers to ensure our programmes meet the needs of the primary care workforce and

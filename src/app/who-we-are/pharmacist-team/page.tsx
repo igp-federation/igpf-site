@@ -16,7 +16,7 @@ export default function PharmacistTeamPage() {
       </p>
 
       <section className={styles.section}>
-        <h2>Our Team</h2>
+        <h2>Our team</h2>
         <p>
           The Practice Based Pharmacist Team includes qualified clinical pharmacists and pharmacy
           technicians who are embedded within GP surgeries. They work alongside GPs and practice
@@ -25,7 +25,7 @@ export default function PharmacistTeamPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>What We Do</h2>
+        <h2>What we do</h2>
         <ul>
           <li>Medication reviews with patients</li>
           <li>Supporting prescribing decisions</li>
@@ -37,7 +37,7 @@ export default function PharmacistTeamPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Benefits for Patients</h2>
+        <h2>Benefits for patients</h2>
         <p>
           Having pharmacists in practices means patients can receive expert medication advice,
           structured medication reviews, and help managing multiple medicines. This improves safety

@@ -7,38 +7,50 @@ export const metadata: Metadata = {
 }
 
 const practices = [
-  { name: 'Amwell Group Practice', hasWebsite: true },
-  { name: 'Andover Medical Centre', hasWebsite: false },
-  { name: 'Archway Medical Centre', hasWebsite: false },
-  { name: 'Clerkenwell Medical Centre', hasWebsite: true },
-  { name: 'Elizabeth Avenue Group Practice', hasWebsite: true },
-  { name: 'Highbury Grange Health Centre', hasWebsite: true },
-  { name: 'Islington Central Medical Centre', hasWebsite: true },
-  { name: 'Killick Street Health Centre', hasWebsite: true },
-  { name: 'Mildmay Medical Practice', hasWebsite: true },
-  { name: 'New North Health Centre', hasWebsite: false },
-  { name: 'Partnership Primary Care Centre', hasWebsite: true },
-  { name: 'Pine Street Medical Practice', hasWebsite: true },
-  { name: 'Ritchie Street Group Practice', hasWebsite: true },
-  { name: 'River Place Health Centre', hasWebsite: true },
-  { name: 'Roman Way Medical Centre', hasWebsite: true },
-  { name: 'Sobell Medical Centre', hasWebsite: true },
-  { name: "St John's Way Medical Centre", hasWebsite: false },
-  { name: "St Peter's Street Medical Practice", hasWebsite: true },
-  { name: 'The Beaumont Practice', hasWebsite: true },
-  { name: 'The Goodinge Group Practice', hasWebsite: true },
-  { name: 'The Junction Practice', hasWebsite: true },
-  { name: 'The Medical Centre', hasWebsite: true },
-  { name: 'The Miller Practice', hasWebsite: true },
-  { name: 'The Rise Group Practice', hasWebsite: true },
-  { name: 'The Village Practice', hasWebsite: true },
+  { name: 'Amwell Group Practice', website: 'https://www.amwellgrouppractice.co.uk/' },
+  { name: 'Andover Medical Centre' },
+  { name: 'Archway Medical Centre' },
+  { name: 'Clerkenwell Medical Centre', website: 'https://www.clerkenwellmedicalpractice.org.uk/' },
+  { name: 'Elizabeth Avenue Group Practice', website: 'https://www.elizabethavenue.org.uk/' },
+  {
+    name: 'Highbury Grange Health Centre',
+    website: 'https://www.highburygrangemedicalpractice.co.uk/',
+  },
+  {
+    name: 'Islington Central Medical Centre',
+    website: 'https://www.islingtoncentralmedicalcentre.org/',
+  },
+  { name: 'Killick Street Health Centre', website: 'https://www.killickstreet.co.uk/' },
+  { name: 'Mildmay Medical Practice', website: 'https://www.mildmaymedicalpractice.co.uk/' },
+  { name: 'New North Health Centre' },
+  {
+    name: 'Partnership Primary Care Centre',
+    website: 'https://www.partnershipprimarycarecentre.co.uk/',
+  },
+  { name: 'Pine Street Medical Practice', website: 'https://www.pinestreetpractice.co.uk/' },
+  { name: 'Ritchie Street Group Practice', website: 'https://www.ritchiestreetgp.co.uk/' },
+  { name: 'River Place Health Centre', website: 'https://www.riverplacegrouppractice.co.uk/' },
+  { name: 'Roman Way Medical Centre', website: 'https://www.romanwaymedicalcentre.co.uk/' },
+  { name: 'Sobell Medical Centre', website: 'https://www.sobellmedicalcentre.nhs.uk/' },
+  { name: "St John's Way Medical Centre" },
+  {
+    name: "St Peter's Street Medical Practice",
+    website: 'https://www.stpetersstreetmedicalpractice.co.uk/',
+  },
+  { name: 'The Beaumont Practice', website: 'https://www.thebeaumontpractice.co.uk/' },
+  { name: 'The Goodinge Group Practice', website: 'https://www.goodingegrouppractice.com/' },
+  { name: 'The Junction Practice', website: 'https://junctionmedicalpractice.co.uk/' },
+  { name: 'The Medical Centre', website: 'https://www.themedicalcentreislington.co.uk/' },
+  { name: 'The Miller Practice', website: 'https://www.millerpractice.nhs.uk/' },
+  { name: 'The Rise Group Practice', website: 'https://www.therisegrouppractice.co.uk/' },
+  { name: 'The Village Practice', website: 'https://www.thevillagepractice.org/' },
 ]
 
 export default function OurGPMembersPage() {
   return (
     <div className={styles.page}>
       <div className={styles.container}>
-        <h1>Our GP Members</h1>
+        <h1>Our GP members</h1>
 
         <section className={styles.intro}>
           <p>
@@ -59,21 +71,31 @@ export default function OurGPMembersPage() {
         </section>
 
         <section className={styles.practiceList}>
-          <h2>Member Practices</h2>
+          <h2>Member practices</h2>
           <div className={styles.practiceGrid}>
-            {practices.map((practice) => (
-              <div key={practice.name} className={styles.practiceCard}>
-                <h3>{practice.name}</h3>
-                {practice.hasWebsite && (
-                  <span className={styles.websiteIndicator}>Website available</span>
-                )}
-              </div>
-            ))}
+            {practices.map((practice) =>
+              practice.website ? (
+                <a
+                  key={practice.name}
+                  href={practice.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.practiceCard}
+                >
+                  <h3>{practice.name}</h3>
+                  <span className={styles.websiteIndicator}>Visit website →</span>
+                </a>
+              ) : (
+                <div key={practice.name} className={styles.practiceCard}>
+                  <h3>{practice.name}</h3>
+                </div>
+              )
+            )}
           </div>
         </section>
 
         <section className={styles.info}>
-          <h2>Finding Your GP</h2>
+          <h2>Finding your GP</h2>
           <p>
             To find a GP practice near you or to register with a practice, you can use the{' '}
             <a

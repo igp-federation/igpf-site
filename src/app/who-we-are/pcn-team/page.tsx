@@ -16,7 +16,7 @@ export default function PCNTeamPage() {
       </p>
 
       <section className={styles.section}>
-        <h2>Team Roles</h2>
+        <h2>Team roles</h2>
         <ul>
           <li>PCN Managers - coordinating network operations</li>
           <li>Clinical Directors support</li>
@@ -27,7 +27,7 @@ export default function PCNTeamPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>What We Provide</h2>
+        <h2>What we provide</h2>
         <ul>
           <li>Day-to-day PCN management and coordination</li>
           <li>Workforce planning and ARRS recruitment</li>

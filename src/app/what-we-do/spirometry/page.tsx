@@ -12,7 +12,7 @@ export default function SpirometryPage() {
       <h1>Spirometry</h1>
 
       <section className={styles.section}>
-        <h2>About Spirometry</h2>
+        <h2>About spirometry</h2>
         <p>
           Spirometry is a lung function test that measures how much air you can breathe out in one
           breath and how quickly you can blow it out. It is used to diagnose and monitor conditions
@@ -21,7 +21,7 @@ export default function SpirometryPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Our Service</h2>
+        <h2>Our service</h2>
         <p>
           The Islington GP Federation provides spirometry testing in community settings, making it
           easier for patients to access this important diagnostic test without having to travel to
@@ -30,7 +30,7 @@ export default function SpirometryPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>What to Expect</h2>
+        <h2>What to expect</h2>
         <ul>
           <li>The test takes about 15-30 minutes</li>
           <li>You will be asked to blow into a mouthpiece connected to a machine</li>

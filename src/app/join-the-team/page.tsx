@@ -22,7 +22,7 @@ export default function JoinTheTeamPage() {
   return (
     <div className={styles.page}>
       <div className={styles.container}>
-        <h1>Join the Team</h1>
+        <h1>Join the team</h1>
 
         <section className={styles.intro}>
           <p>
@@ -34,7 +34,7 @@ export default function JoinTheTeamPage() {
         </section>
 
         <section className={styles.section}>
-          <h2>Our Workforce</h2>
+          <h2>Our workforce</h2>
           <p>We employ professionals across many disciplines including:</p>
           <div className={styles.roleGrid}>
             {roles.map((role) => (
@@ -46,7 +46,7 @@ export default function JoinTheTeamPage() {
         </section>
 
         <section className={styles.section}>
-          <h2>Working in Partnership</h2>
+          <h2>Working in partnership</h2>
           <p>
             We collaborate with key NHS and community providers including Whittington Health NHS
             Trust, Camden & Islington NHS Foundation Trust, and Age UK Islington. Joining us means
@@ -55,7 +55,7 @@ export default function JoinTheTeamPage() {
         </section>
 
         <section className={styles.section}>
-          <h2>Why Work With Us?</h2>
+          <h2>Why work with us?</h2>
           <ul>
             <li>Be part of a growing, innovative healthcare organisation</li>
             <li>Work across a variety of community-based services</li>
@@ -66,7 +66,7 @@ export default function JoinTheTeamPage() {
         </section>
 
         <section className={styles.contactBox}>
-          <h2>Current Vacancies</h2>
+          <h2>Current vacancies</h2>
           <p>
             For information about current vacancies and how to apply, please contact us at{' '}
             <a href="mailto:igpf.islingtongp@nhs.net">igpf.islingtongp@nhs.net</a>

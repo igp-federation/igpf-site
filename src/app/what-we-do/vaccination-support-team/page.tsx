@@ -12,7 +12,7 @@ export default function VaccinationSupportTeamPage() {
       <h1>Vaccination Support Team</h1>
 
       <section className={styles.section}>
-        <h2>About the Team</h2>
+        <h2>About the team</h2>
         <p>
           The Vaccination Support Team helps coordinate and deliver vaccination programmes across
           Islington. We work with GP practices to ensure patients have access to important
@@ -21,7 +21,7 @@ export default function VaccinationSupportTeamPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Vaccination Programmes</h2>
+        <h2>Vaccination programmes</h2>
         <ul>
           <li>Seasonal flu vaccination</li>
           <li>COVID-19 vaccination</li>
@@ -33,7 +33,7 @@ export default function VaccinationSupportTeamPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>How We Help</h2>
+        <h2>How we help</h2>
         <ul>
           <li>Coordination of vaccination clinics</li>
           <li>Staff training and support</li>
@@ -44,7 +44,7 @@ export default function VaccinationSupportTeamPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Getting Vaccinated</h2>
+        <h2>Getting vaccinated</h2>
         <p>
           To receive a vaccination, please contact your registered GP practice. They will be able to
           advise which vaccinations you are eligible for and book you into an appropriate clinic.

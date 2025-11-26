@@ -22,7 +22,7 @@ export default function PCARPPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Key Objectives</h2>
+        <h2>Key objectives</h2>
         <ul>
           <li>Improve patient access to appointments</li>
           <li>Reduce waiting times for GP services</li>
@@ -33,7 +33,7 @@ export default function PCARPPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>What We&apos;re Doing</h2>
+        <h2>What we&apos;re doing</h2>
         <ul>
           <li>Working with practices to improve appointment availability</li>
           <li>Implementing digital solutions for easier access</li>
@@ -44,7 +44,7 @@ export default function PCARPPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>For Patients</h2>
+        <h2>For patients</h2>
         <p>
           If you need to see your GP, please contact your practice to book an appointment. Many
           practices now offer online booking, telephone consultations, and same-day urgent

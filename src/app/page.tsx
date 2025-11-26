@@ -1,11 +1,58 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from './page.module.scss'
 
+const services = [
+  {
+    title: 'Community ENT',
+    description: 'Fast and efficient community based ear, nose and throat treatments.',
+    href: '/what-we-do/community-ent',
+  },
+  {
+    title: 'Gynaecology Services',
+    description: 'Comprehensive gynaecology services available across Islington and Haringey.',
+    href: '/what-we-do/gynaecology-collaborative',
+  },
+  {
+    title: 'Enhanced Access',
+    description: 'Weekday evening and Saturday GP appointments for your convenience.',
+    href: '/what-we-do/ihub',
+  },
+  {
+    title: 'Mental Health Support',
+    description:
+      'Severe Mental Illness service in partnership with Camden and Islington Mental Health Trust.',
+    href: '/what-we-do/severe-mental-illness',
+  },
+  {
+    title: 'Health Outreach',
+    description: 'Islington Hostel Outreach Team supporting homeless healthcare.',
+    href: '/what-we-do/islington-health-outreach',
+  },
+  {
+    title: 'Practice Support',
+    description: 'Workforce development, pharmacy services, and vaccination campaigns.',
+    href: '/what-we-do/pharmacy',
+  },
+]
+
 const partners = [
-  'Whittington Health NHS Trust',
-  'Age UK Islington',
-  'Camden & Islington NHS Foundation Trust',
-  'Federated4Health Limited',
+  {
+    name: 'Whittington Health NHS Trust',
+    url: 'https://www.whittington.nhs.uk',
+  },
+  {
+    name: 'Age UK Islington',
+    url: 'https://www.ageuk.org.uk/islington',
+  },
+  {
+    name: 'Camden & Islington NHS Foundation Trust',
+    url: 'https://www.candi.nhs.uk',
+  },
+  {
+    name: 'Federated4Health',
+    url: 'https://www.federated4health.co.uk',
+  },
 ]
 
 export default function Home() {
@@ -44,51 +91,36 @@ export default function Home() {
 
       <section className={styles.services}>
         <div className={styles.container}>
-          <h2>Our Services</h2>
+          <h2>Our services</h2>
           <div className={styles.serviceGrid}>
-            <div className={styles.serviceCard}>
-              <h3>Community ENT</h3>
-              <p>Fast and efficient community based ear, nose and throat treatments.</p>
-            </div>
-            <div className={styles.serviceCard}>
-              <h3>Gynaecology Services</h3>
-              <p>Comprehensive gynaecology services available across Islington and Haringey.</p>
-            </div>
-            <div className={styles.serviceCard}>
-              <h3>Enhanced Access</h3>
-              <p>Weekday evening and Saturday GP appointments for your convenience.</p>
-            </div>
-            <div className={styles.serviceCard}>
-              <h3>Mental Health Support</h3>
-              <p>
-                Severe Mental Illness service in partnership with Camden and Islington Mental Health
-                Trust.
-              </p>
-            </div>
-            <div className={styles.serviceCard}>
-              <h3>Health Outreach</h3>
-              <p>Islington Hostel Outreach Team supporting homeless healthcare.</p>
-            </div>
-            <div className={styles.serviceCard}>
-              <h3>Practice Support</h3>
-              <p>Workforce development, pharmacy services, and vaccination campaigns.</p>
-            </div>
+            {services.map((service) => (
+              <Link key={service.href} href={service.href} className={styles.serviceCard}>
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
 
       <section className={styles.partners}>
         <div className={styles.container}>
-          <h2>Working in Partnership</h2>
+          <h2>Working in partnership</h2>
           <p className={styles.partnersIntro}>
             We collaborate with key NHS and community partners to deliver integrated healthcare
             services.
           </p>
           <div className={styles.partnerList}>
             {partners.map((partner) => (
-              <div key={partner} className={styles.partnerCard}>
-                {partner}
-              </div>
+              <a
+                key={partner.name}
+                href={partner.url}
+                className={styles.partnerCard}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {partner.name}
+              </a>
             ))}
           </div>
         </div>

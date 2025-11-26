@@ -9,10 +9,10 @@ export const metadata: Metadata = {
 export default function HowInfoUsedPage() {
   return (
     <div className={styles.dataPage}>
-      <h1>How Your Information is Used</h1>
+      <h1>How your information is used</h1>
 
       <section className={styles.section}>
-        <h2>Primary Uses</h2>
+        <h2>Primary uses</h2>
         <p>We use your personal information primarily to:</p>
         <ul>
           <li>Provide you with healthcare services</li>
@@ -24,7 +24,7 @@ export default function HowInfoUsedPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Sharing Your Information</h2>
+        <h2>Sharing your information</h2>
         <p>
           We may share your information with other healthcare providers involved in your care,
           including:
@@ -43,14 +43,14 @@ export default function HowInfoUsedPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Other Uses</h2>
-        <h3>Service Improvement</h3>
+        <h2>Other uses</h2>
+        <h3>Service improvement</h3>
         <p>
           We may use anonymised data to improve our services, monitor quality, and plan future
           healthcare provision.
         </p>
 
-        <h3>Legal and Regulatory Requirements</h3>
+        <h3>Legal and regulatory requirements</h3>
         <p>
           We may be required to share information with regulatory bodies such as the Care Quality
           Commission, or in response to legal requirements.
@@ -64,7 +64,7 @@ export default function HowInfoUsedPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Your Rights</h2>
+        <h2>Your rights</h2>
         <p>You have the right to:</p>
         <ul>
           <li>Access your personal information</li>

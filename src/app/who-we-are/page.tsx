@@ -69,7 +69,7 @@ export default function WhoWeArePage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Our History</h2>
+        <h2>Our history</h2>
         <p>
           Established in December 2015, we were founded to support general practice sustainability
           in Islington and enhance patient health outcomes. The federation now employs over 300
@@ -78,7 +78,7 @@ export default function WhoWeArePage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Our Teams</h2>
+        <h2>Our teams</h2>
         <div className={styles.teamGrid}>
           {teams.map((team) => (
             <Link key={team.href} href={team.href} className={styles.teamCard}>

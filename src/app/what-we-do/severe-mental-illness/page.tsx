@@ -13,7 +13,7 @@ export default function SevereMentalIllnessPage() {
       <h1>Severe Mental Illness Service</h1>
 
       <section className={styles.section}>
-        <h2>About the Service</h2>
+        <h2>About the service</h2>
         <p>
           Our Severe Mental Illness (SMI) service is delivered in partnership with Camden and
           Islington NHS Foundation Trust. This service ensures that patients with severe mental
@@ -22,7 +22,7 @@ export default function SevereMentalIllnessPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>What We Provide</h2>
+        <h2>What we provide</h2>
         <ul>
           <li>Annual physical health checks for patients on the SMI register</li>
           <li>Cardiovascular risk assessment</li>
@@ -35,7 +35,7 @@ export default function SevereMentalIllnessPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Why Physical Health Checks Matter</h2>
+        <h2>Why physical health checks matter</h2>
         <p>
           People with severe mental illness are at increased risk of physical health problems. Our
           integrated approach ensures that both mental and physical health needs are addressed,
@@ -44,7 +44,7 @@ export default function SevereMentalIllnessPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Our Partners</h2>
+        <h2>Our partners</h2>
         <p>
           We work closely with Camden and Islington NHS Foundation Trust mental health teams to
           provide coordinated care for our patients.

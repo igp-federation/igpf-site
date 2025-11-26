@@ -12,7 +12,7 @@ export default function PharmacyPage() {
       <h1>Pharmacy Services</h1>
 
       <section className={styles.section}>
-        <h2>About Our Pharmacy Services</h2>
+        <h2>About our pharmacy services</h2>
         <p>
           The Islington GP Federation provides clinical pharmacy services to support GP practices
           across Islington. Our team of pharmacists and pharmacy technicians work within practices
@@ -21,7 +21,7 @@ export default function PharmacyPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>What We Provide</h2>
+        <h2>What we provide</h2>
         <ul>
           <li>Medication reviews and optimisation</li>
           <li>Repeat prescription management</li>
@@ -34,7 +34,7 @@ export default function PharmacyPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Practice Based Pharmacists</h2>
+        <h2>Practice based pharmacists</h2>
         <p>
           Our Practice Based Pharmacist Team works directly within GP surgeries, providing expert
           advice on medications and supporting clinicians with prescribing decisions. This helps to
@@ -43,7 +43,7 @@ export default function PharmacyPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Benefits for Patients</h2>
+        <h2>Benefits for patients</h2>
         <ul>
           <li>Expert medication advice from qualified pharmacists</li>
           <li>Structured medication reviews</li>

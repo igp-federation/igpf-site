@@ -13,7 +13,7 @@ export default function IslingtonHealthOutreachPage() {
       <h1>Islington Health Outreach</h1>
 
       <section className={styles.section}>
-        <h2>About the Service</h2>
+        <h2>About the service</h2>
         <p>
           The Islington Hostel Outreach Team (IHOT) provides primary healthcare services to homeless
           and vulnerably housed people living in hostels and temporary accommodation across
@@ -23,7 +23,7 @@ export default function IslingtonHealthOutreachPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>What We Provide</h2>
+        <h2>What we provide</h2>
         <ul>
           <li>GP consultations at hostel locations</li>
           <li>Health assessments and screening</li>
@@ -37,7 +37,7 @@ export default function IslingtonHealthOutreachPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Who We Help</h2>
+        <h2>Who we help</h2>
         <p>
           Our service is available to anyone living in a hostel or temporary accommodation in
           Islington, including those who are not currently registered with a GP. We work with people
@@ -46,7 +46,7 @@ export default function IslingtonHealthOutreachPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Our Approach</h2>
+        <h2>Our approach</h2>
         <p>
           We understand that people experiencing homelessness often face multiple complex health
           needs and may have had difficult experiences with healthcare in the past. Our team takes a

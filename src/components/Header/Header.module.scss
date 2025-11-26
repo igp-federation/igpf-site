@@ -23,11 +23,11 @@
 
   img {
     display: block;
-    height: 50px;
+    height: 40px;
     width: auto;
 
     @include responsive($breakpoint-md) {
-      height: 60px;
+      height: 50px;
     }
   }
 }
@@ -125,5 +125,40 @@
 
   @include responsive($breakpoint-lg) {
     padding: $spacing-sm 0;
+  }
+}
+
+.navLinkActive {
+  color: $color-primary;
+  position: relative;
+
+  @include responsive($breakpoint-lg) {
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: $color-primary;
+    }
+  }
+
+  @include mobile-only {
+    background: $color-grey-light;
+  }
+}
+
+.menuOpen {
+  .menuIcon {
+    background: transparent;
+
+    &::before {
+      transform: rotate(45deg) translate(5px, 6px);
+    }
+
+    &::after {
+      transform: rotate(-45deg) translate(5px, -6px);
+    }
   }
 }

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function YourDataPage() {
   return (
     <div className={styles.page}>
-      <h1>Your Data</h1>
+      <h1>Your data</h1>
 
       <section className={styles.intro}>
         <p className={styles.statement}>
@@ -25,7 +25,7 @@ export default function YourDataPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Key Contacts</h2>
+        <h2>Key contacts</h2>
         <div className={styles.contactGrid}>
           <div className={styles.contactCard}>
             <h3>Senior Information Risk Owner</h3>
@@ -46,7 +46,7 @@ export default function YourDataPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Regulatory Information</h2>
+        <h2>Regulatory information</h2>
         <p>
           We operate under Care Quality Commission oversight and maintain registration with the
           Information Commissioner&apos;s Office as a Data Controller.
@@ -57,29 +57,29 @@ export default function YourDataPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Learn More</h2>
+        <h2>Learn more</h2>
         <div className={styles.linkGrid}>
           <Link href="/your-data/information-we-hold" className={styles.linkCard}>
-            <h3>What Information We Hold</h3>
+            <h3>What information we hold</h3>
             <p>Details about the types of personal data we collect and store.</p>
           </Link>
           <Link href="/your-data/how-info-used" className={styles.linkCard}>
-            <h3>How Your Information is Used</h3>
+            <h3>How your information is used</h3>
             <p>How we use your data to provide healthcare services.</p>
           </Link>
           <Link href="/your-data/keeping-info-safe" className={styles.linkCard}>
-            <h3>Keeping Your Information Safe</h3>
+            <h3>Keeping your information safe</h3>
             <p>The security measures we use to protect your data.</p>
           </Link>
           <Link href="/your-data/site-details" className={styles.linkCard}>
-            <h3>Site Details & ODS Numbers</h3>
+            <h3>Site details & ODS numbers</h3>
             <p>Our registered locations and NHS organisation codes.</p>
           </Link>
         </div>
       </section>
 
       <section className={styles.section}>
-        <h2>Data Requests</h2>
+        <h2>Data requests</h2>
         <p>
           If you have questions about your data or wish to make a data access request, please
           contact our Data Protection Officer at{' '}

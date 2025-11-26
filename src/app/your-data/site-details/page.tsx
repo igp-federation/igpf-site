@@ -9,10 +9,10 @@ export const metadata: Metadata = {
 export default function SiteDetailsPage() {
   return (
     <div className={styles.dataPage}>
-      <h1>Site Details & ODS Numbers</h1>
+      <h1>Site details & ODS numbers</h1>
 
       <section className={styles.section}>
-        <h2>Organisation Details</h2>
+        <h2>Organisation details</h2>
         <div className={styles.infoBox}>
           <h3>The Islington GP Group Limited</h3>
           <p>
@@ -31,7 +31,7 @@ export default function SiteDetailsPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Registered Office</h2>
+        <h2>Registered office</h2>
         <address className={styles.infoBox}>
           Unit 16-18, The Studios
           <br />
@@ -44,7 +44,7 @@ export default function SiteDetailsPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Service Locations</h2>
+        <h2>Service locations</h2>
         <p>
           We operate services from multiple locations across Islington. For details of specific
           service locations, please see the relevant service pages under{' '}

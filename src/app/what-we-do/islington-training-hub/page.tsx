@@ -12,7 +12,7 @@ export default function IslingtonTrainingHubPage() {
       <h1>Islington Training Hub</h1>
 
       <section className={styles.section}>
-        <h2>About the Training Hub</h2>
+        <h2>About the training hub</h2>
         <p>
           The Islington Training Hub provides training and development opportunities for the primary
           care workforce across Islington. We support the development of clinical and non-clinical
@@ -21,7 +21,7 @@ export default function IslingtonTrainingHubPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>What We Offer</h2>
+        <h2>What we offer</h2>
         <ul>
           <li>Training programmes for practice staff</li>
           <li>Professional development courses</li>
@@ -33,7 +33,7 @@ export default function IslingtonTrainingHubPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Our Focus Areas</h2>
+        <h2>Our focus areas</h2>
         <ul>
           <li>Supporting new roles in primary care (ARRS roles)</li>
           <li>Retention and wellbeing of existing workforce</li>
@@ -43,7 +43,7 @@ export default function IslingtonTrainingHubPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Contact the Training Hub</h2>
+        <h2>Contact the training hub</h2>
         <p>
           For more information about training opportunities, please contact us through the main
           federation contact channels.

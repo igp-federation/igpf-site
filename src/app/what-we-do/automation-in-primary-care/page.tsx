@@ -10,10 +10,10 @@ export const metadata: Metadata = {
 export default function AutomationPage() {
   return (
     <div className={styles.servicePage}>
-      <h1>Automation in Primary Care</h1>
+      <h1>Automation in primary care</h1>
 
       <section className={styles.section}>
-        <h2>About Our Work</h2>
+        <h2>About our work</h2>
         <p>
           The Islington GP Federation is committed to using digital innovation and automation to
           improve efficiency in primary care. By automating routine tasks, we help free up clinical
@@ -22,7 +22,7 @@ export default function AutomationPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Areas of Focus</h2>
+        <h2>Areas of focus</h2>
         <ul>
           <li>Automated appointment reminders</li>
           <li>Digital prescription management</li>
@@ -45,7 +45,7 @@ export default function AutomationPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Supporting Digital Transformation</h2>
+        <h2>Supporting digital transformation</h2>
         <p>
           We work with practices to identify opportunities for automation and provide support with
           implementing new digital solutions. This includes training, change management, and ongoing

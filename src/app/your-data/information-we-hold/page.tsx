@@ -9,16 +9,16 @@ export const metadata: Metadata = {
 export default function InformationWeHoldPage() {
   return (
     <div className={styles.dataPage}>
-      <h1>What Information We Hold</h1>
+      <h1>What information we hold</h1>
 
       <section className={styles.section}>
-        <h2>Types of Information</h2>
+        <h2>Types of information</h2>
         <p>
           When you use our services, we may collect and hold the following types of personal
           information:
         </p>
 
-        <h3>Personal Details</h3>
+        <h3>Personal details</h3>
         <ul>
           <li>Your name, date of birth, and NHS number</li>
           <li>Contact details including address, phone number, and email</li>
@@ -26,7 +26,7 @@ export default function InformationWeHoldPage() {
           <li>Next of kin details</li>
         </ul>
 
-        <h3>Health Information</h3>
+        <h3>Health information</h3>
         <ul>
           <li>Medical history and current conditions</li>
           <li>Medications and allergies</li>
@@ -35,7 +35,7 @@ export default function InformationWeHoldPage() {
           <li>Treatment plans and outcomes</li>
         </ul>
 
-        <h3>Administrative Information</h3>
+        <h3>Administrative information</h3>
         <ul>
           <li>GP registration details</li>
           <li>Appointment history</li>
@@ -44,7 +44,7 @@ export default function InformationWeHoldPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Where Information Comes From</h2>
+        <h2>Where information comes from</h2>
         <ul>
           <li>Information you provide directly to us</li>
           <li>Your registered GP practice</li>
@@ -55,7 +55,7 @@ export default function InformationWeHoldPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Legal Basis for Processing</h2>
+        <h2>Legal basis for processing</h2>
         <p>
           We process your personal data under several legal bases including the provision of health
           care services, compliance with legal obligations, and where we have your explicit consent.

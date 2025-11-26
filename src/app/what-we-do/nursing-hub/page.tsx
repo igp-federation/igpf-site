@@ -12,7 +12,7 @@ export default function NursingHubPage() {
       <h1>Nursing Hub</h1>
 
       <section className={styles.section}>
-        <h2>About the Nursing Hub</h2>
+        <h2>About the nursing hub</h2>
         <p>
           The Nursing Hub provides coordinated nursing services across Islington GP practices. We
           support practices with nursing capacity and help ensure high-quality nursing care is
@@ -21,7 +21,7 @@ export default function NursingHubPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Services Provided</h2>
+        <h2>Services provided</h2>
         <ul>
           <li>Practice nursing support</li>
           <li>Chronic disease management</li>
@@ -34,7 +34,7 @@ export default function NursingHubPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Supporting Practices</h2>
+        <h2>Supporting practices</h2>
         <p>
           We help practices maintain nursing capacity by providing flexible nursing support. This
           includes covering absences, supporting with high-demand periods, and helping practices
@@ -43,7 +43,7 @@ export default function NursingHubPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Training and Development</h2>
+        <h2>Training and development</h2>
         <p>
           The Nursing Hub also supports the professional development of nurses working in primary
           care, providing training opportunities and clinical supervision.

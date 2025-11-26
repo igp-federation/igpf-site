@@ -10,10 +10,10 @@ export const metadata: Metadata = {
 export default function ClinicalGovernancePage() {
   return (
     <div className={styles.servicePage}>
-      <h1>Clinical Governance & Quality</h1>
+      <h1>Clinical governance & quality</h1>
 
       <section className={styles.section}>
-        <h2>Our Commitment to Quality</h2>
+        <h2>Our commitment to quality</h2>
         <p>
           The Islington GP Federation is committed to providing safe, effective, and high-quality
           healthcare. Our clinical governance framework ensures that all our services meet the
@@ -22,7 +22,7 @@ export default function ClinicalGovernancePage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Key Elements</h2>
+        <h2>Key elements</h2>
         <ul>
           <li>Clinical leadership and oversight</li>
           <li>Patient safety monitoring</li>
@@ -52,7 +52,7 @@ export default function ClinicalGovernancePage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Patient Feedback</h2>
+        <h2>Patient feedback</h2>
         <p>
           Patient feedback is an important part of our quality improvement work. We welcome
           comments, compliments, and complaints, which help us learn and improve our services.

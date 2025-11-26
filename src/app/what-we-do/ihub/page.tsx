@@ -27,7 +27,7 @@ export default function IHubPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Appointment Times</h2>
+        <h2>Appointment times</h2>
         <ul>
           <li>
             <strong>Weekday evenings:</strong> Extended hours after normal surgery times
@@ -39,7 +39,7 @@ export default function IHubPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Services Available</h2>
+        <h2>Services available</h2>
         <ul>
           <li>GP consultations</li>
           <li>Routine health checks</li>
@@ -50,7 +50,7 @@ export default function IHubPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>How to Book</h2>
+        <h2>How to book</h2>
         <p>
           To book an I:HUB appointment, please contact your registered GP practice. They will be
           able to book you into an available slot at one of our three Islington locations.

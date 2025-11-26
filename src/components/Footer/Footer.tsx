@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import styles from './Footer.module.scss'
 
 const navItems = [
@@ -16,24 +17,24 @@ export default function Footer() {
       <div className={styles.container}>
         <div className={styles.top}>
           <div className={styles.branding}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               src="/images/igpgroup-logo.webp"
               alt="Islington GP Federation"
+              width={150}
               height={50}
               className={styles.logo}
             />
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               src="/images/Providing+NHS+Services+RGB+BLUE.webp"
               alt="Providing NHS Services"
+              width={120}
               height={40}
               className={styles.nhsBadge}
             />
           </div>
 
-          <nav className={styles.nav}>
-            <ul className={styles.navList}>
+          <nav className={styles.nav} aria-label="Footer navigation">
+            <ul className={styles.navList} role="list">
               {navItems.map((item) => (
                 <li key={item.href}>
                   <Link href={item.href} className={styles.navLink}>

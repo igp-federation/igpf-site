@@ -9,10 +9,10 @@ export const metadata: Metadata = {
 export default function PracticesWeRunPage() {
   return (
     <div className={styles.servicePage}>
-      <h1>Practices We Run</h1>
+      <h1>Practices we run</h1>
 
       <section className={styles.section}>
-        <h2>About Our Practices</h2>
+        <h2>About our practices</h2>
         <p>
           In addition to supporting our 25 member practices, the Islington GP Federation directly
           operates a number of GP practices. These practices provide high-quality primary care
@@ -21,7 +21,7 @@ export default function PracticesWeRunPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Our Commitment</h2>
+        <h2>Our commitment</h2>
         <p>
           The practices we run are committed to providing excellent patient care, with a focus on:
         </p>
@@ -35,7 +35,7 @@ export default function PracticesWeRunPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Registering with Our Practices</h2>
+        <h2>Registering with our practices</h2>
         <p>
           If you live within the catchment area of one of our practices, you may be able to register
           as a patient. Please contact the practice directly or visit our{' '}

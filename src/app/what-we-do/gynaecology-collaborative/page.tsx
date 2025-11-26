@@ -46,7 +46,7 @@ export default function GynaecologyCollaborativePage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Services Provided</h2>
+        <h2>Services provided</h2>
         <ul>
           <li>Menstrual problems (heavy, painful, irregular bleeding; endometriosis; PCOS)</li>
           <li>Menopause assessment and treatment</li>
@@ -59,14 +59,14 @@ export default function GynaecologyCollaborativePage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Clinical Leadership</h2>
+        <h2>Clinical leadership</h2>
         <p>
           <strong>Clinical Leads:</strong> Dr Karin Schachinger and Dr Laila Morris
         </p>
       </section>
 
       <section className={styles.section}>
-        <h2>Service Locations</h2>
+        <h2>Service locations</h2>
         <div className={styles.locationGrid}>
           {locations.map((location) => (
             <div key={location.name} className={styles.locationCard}>
@@ -79,7 +79,7 @@ export default function GynaecologyCollaborativePage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Contact Us</h2>
+        <h2>Contact us</h2>
         <div className={styles.contactInfo}>
           <p>
             <strong>Phone:</strong> 0203 915 8800 (Monday-Friday, 9:30am - 4:30pm)
@@ -96,7 +96,7 @@ export default function GynaecologyCollaborativePage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Referral Information</h2>
+        <h2>Referral information</h2>
         <p>
           Referrals are triaged within five working days; urgent cases are addressed within 48
           hours. Most appointments are offered within six weeks.

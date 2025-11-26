@@ -9,10 +9,10 @@ export const metadata: Metadata = {
 export default function ModernSlaveryPage() {
   return (
     <div className={styles.dataPage}>
-      <h1>Modern Slavery Statement</h1>
+      <h1>Modern slavery statement</h1>
 
       <section className={styles.section}>
-        <h2>Our Commitment</h2>
+        <h2>Our commitment</h2>
         <p>
           The Islington GP Group Limited (trading as Islington GP Federation) is committed to
           preventing slavery and human trafficking in our business and supply chains. We are
@@ -21,7 +21,7 @@ export default function ModernSlaveryPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Our Organisation</h2>
+        <h2>Our organisation</h2>
         <p>
           We are an NHS healthcare provider operating in Islington, London. We provide primary care
           services and employ over 300 staff across clinical and support roles.
@@ -29,7 +29,7 @@ export default function ModernSlaveryPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Our Policies</h2>
+        <h2>Our policies</h2>
         <p>We have policies and procedures in place to ensure that:</p>
         <ul>
           <li>We conduct our business in an ethical manner</li>
@@ -40,7 +40,7 @@ export default function ModernSlaveryPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Our Supply Chains</h2>
+        <h2>Our supply chains</h2>
         <p>
           We are committed to ensuring that our suppliers adhere to the same high standards. We
           expect all suppliers to comply with relevant laws and ethical standards.
@@ -48,7 +48,7 @@ export default function ModernSlaveryPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Due Diligence</h2>
+        <h2>Due diligence</h2>
         <p>As part of our commitment, we:</p>
         <ul>
           <li>Review our supply chains to assess risks</li>
@@ -59,7 +59,7 @@ export default function ModernSlaveryPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Reporting Concerns</h2>
+        <h2>Reporting concerns</h2>
         <p>
           If you have any concerns about modern slavery or human trafficking in our organisation or
           supply chains, please contact us at{' '}

@@ -11,14 +11,14 @@ export default function ContactUsPage() {
   return (
     <div className={styles.page}>
       <div className={styles.container}>
-        <h1>Contact Us</h1>
+        <h1>Contact us</h1>
 
         <div className={styles.grid}>
           <section className={styles.contactInfo}>
-            <h2>Get in Touch</h2>
+            <h2>Get in touch</h2>
 
             <div className={styles.contactCard}>
-              <h3>General Enquiries</h3>
+              <h3>General enquiries</h3>
               <p>
                 <strong>Email:</strong>{' '}
                 <a href="mailto:igpf.islingtongp@nhs.net">igpf.islingtongp@nhs.net</a>
@@ -34,7 +34,7 @@ export default function ContactUsPage() {
             </div>
 
             <div className={styles.contactCard}>
-              <h3>Patient Feedback & Complaints</h3>
+              <h3>Patient feedback & complaints</h3>
               <p>
                 <strong>Email:</strong>{' '}
                 <a href="mailto:igpf.feedback@nhs.net">igpf.feedback@nhs.net</a>
@@ -42,7 +42,7 @@ export default function ContactUsPage() {
             </div>
 
             <div className={styles.contactCard}>
-              <h3>Our Address</h3>
+              <h3>Our address</h3>
               <address>
                 Unit 16-18, The Studios
                 <br />
@@ -54,13 +54,13 @@ export default function ContactUsPage() {
           </section>
 
           <section className={styles.feedback}>
-            <h2>Feedback & Complaints</h2>
+            <h2>Feedback & complaints</h2>
             <p>
               We welcome your feedback including compliments, comments, concerns or complaints about
               our NHS services. Your feedback helps us improve our services.
             </p>
 
-            <h3>Our Commitment</h3>
+            <h3>Our commitment</h3>
             <ul>
               <li>We will acknowledge complaints within three working days</li>
               <li>We will provide investigation outcomes within 28 working days</li>
@@ -69,7 +69,7 @@ export default function ContactUsPage() {
               </li>
             </ul>
 
-            <h3>How to Complain</h3>
+            <h3>How to complain</h3>
             <p>
               Please email your complaint to{' '}
               <a href="mailto:igpf.feedback@nhs.net">igpf.feedback@nhs.net</a>. Include as much
@@ -80,7 +80,7 @@ export default function ContactUsPage() {
         </div>
 
         <section className={styles.companyInfo}>
-          <h2>Company Information</h2>
+          <h2>Company information</h2>
           <p>
             <strong>Registered Name:</strong> The Islington GP Group Limited
           </p>

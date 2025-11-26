@@ -54,10 +54,12 @@
 }
 
 .practiceCard {
+  display: block;
   background: $color-grey-light;
   padding: $spacing-lg;
   border-radius: 8px;
   transition: all $transition-normal;
+  text-decoration: none;
 
   &:hover {
     background: $color-white;
@@ -73,7 +75,7 @@
 
 .websiteIndicator {
   font-size: $font-size-sm;
-  color: $color-accent;
+  color: $color-primary;
 }
 
 .info {

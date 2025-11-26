@@ -68,7 +68,7 @@ export default function PrimaryCareNetworksPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Services We Provide to PCNs</h2>
+        <h2>Services we provide to PCNs</h2>
         {services.map((service) => (
           <div key={service.title} style={{ marginBottom: '1.5rem' }}>
             <h3>{service.title}</h3>
@@ -82,7 +82,7 @@ export default function PrimaryCareNetworksPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>Future Direction</h2>
+        <h2>Future direction</h2>
         <p>
           PCNs will emphasize neighborhood collaboration, service integration, digital
           transformation, and preventive care approaches.
