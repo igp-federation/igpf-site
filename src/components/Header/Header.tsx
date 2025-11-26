@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
@@ -17,24 +17,28 @@ const navItems = [
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [prevPathname, setPrevPathname] = useState<string | null>(null)
   const pathname = usePathname()
 
-  const closeMenu = useCallback(() => setIsMenuOpen(false), [])
+  // Close menu on route change
+  useEffect(() => {
+    if (prevPathname !== null && pathname !== prevPathname) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- Intentional: close menu on navigation
+      setIsMenuOpen(false)
+    }
+    setPrevPathname(pathname)
+  }, [pathname, prevPathname])
 
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
       if (e.key === 'Escape' && isMenuOpen) {
-        closeMenu()
+        setIsMenuOpen(false)
       }
     }
 
     document.addEventListener('keydown', handleEscape)
     return () => document.removeEventListener('keydown', handleEscape)
-  }, [isMenuOpen, closeMenu])
-
-  useEffect(() => {
-    closeMenu()
-  }, [pathname, closeMenu])
+  }, [isMenuOpen])
 
   const isActive = (href: string) => {
     if (href === '/') return pathname === '/'

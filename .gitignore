@@ -9,6 +9,7 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
+package-lock.json.bak
 
 # testing
 /coverage
@@ -19,10 +20,16 @@
 
 # production
 /build
+/dist
 
 # misc
 .DS_Store
 *.pem
+*.log
+.idea/
+*.swp
+*.swo
+*~
 
 # debug
 npm-debug.log*
@@ -39,3 +46,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# editor
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json

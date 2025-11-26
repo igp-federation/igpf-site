@@ -1,6 +1,6 @@
 # Islington GP Federation Website
 
-Official website for the Islington GP Federation (Islington GP Group Limited), providing information about NHS primary care services in Islington.
+Official website for the [Islington GP Federation](https://www.islingtongpfederation.org) (Islington GP Group Limited), providing information about NHS primary care services in Islington.
 
 ## Getting Started
 
@@ -16,6 +16,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 - [Next.js 16](https://nextjs.org/) - React framework with App Router
 - [TypeScript](https://www.typescriptlang.org/) - Type safety
 - [SCSS Modules](https://sass-lang.com/) - Component-scoped styling
+- [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/) - Code quality
 
 ## Scripts
 
@@ -25,11 +26,13 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 | `npm run build` | Build for production |
 | `npm run start` | Start production server |
 | `npm run lint` | Run ESLint |
+| `npm run lint:fix` | Run ESLint with auto-fix |
 | `npm run format` | Format with Prettier |
+| `npm run format:check` | Check formatting |
 
 ## Deployment
 
-This project is configured for deployment on [Vercel](https://vercel.com).
+This project is deployed on [Vercel](https://vercel.com).
 
 ## Contact
 
