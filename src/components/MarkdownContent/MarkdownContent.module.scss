@@ -1,0 +1,34 @@
+@use '../../styles/variables' as *;
+
+.markdownContent {
+  h1 {
+    color: $color-primary;
+    margin-bottom: $spacing-xl;
+  }
+}
+
+.section {
+  margin-bottom: $spacing-2xl;
+
+  h2 {
+    color: $color-primary;
+    font-size: $font-size-xl;
+    margin-bottom: $spacing-md;
+  }
+
+  p {
+    margin-bottom: $spacing-md;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  ul {
+    margin-bottom: $spacing-md;
+
+    li {
+      margin-bottom: $spacing-sm;
+    }
+  }
+}
