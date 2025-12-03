@@ -3,7 +3,7 @@ import { getMarkdownContent } from '@/lib/markdown'
 import { MarkdownContent } from '@/components/MarkdownContent'
 import styles from '../service.module.scss'
 
-const { frontmatter, content } = getMarkdownContent('what-we-do', 'nursing-hub')
+const { frontmatter, content } = getMarkdownContent('src/app/what-we-do/nursing-hub/content.md')
 
 export const metadata: Metadata = {
   title: frontmatter.title,
