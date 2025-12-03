@@ -4,16 +4,9 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
+import { mainNavItems } from '@/config'
+import { cn } from '@/lib'
 import styles from './Header.module.scss'
-
-const navItems = [
-  { href: '/what-we-do', label: 'What we do' },
-  { href: '/who-we-are', label: 'Who we are' },
-  { href: '/our-gp-members', label: 'Our GP members' },
-  { href: '/join-the-team', label: 'Join the team' },
-  { href: '/contact-us', label: 'Contact us' },
-  { href: '/your-data', label: 'Your data' },
-]
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -51,7 +44,7 @@ export default function Header() {
         <Link href="/" className={styles.logo}>
           <Image
             src="/images/igpf-logo.webp"
-            alt="Islington GP Federation - Home"
+            alt="Islington GP Federation logo - Return to homepage"
             width={150}
             height={30}
             priority
@@ -59,7 +52,7 @@ export default function Header() {
         </Link>
 
         <button
-          className={`${styles.menuToggle} ${isMenuOpen ? styles.menuOpen : ''}`}
+          className={cn(styles.menuToggle, isMenuOpen && styles.menuOpen)}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-expanded={isMenuOpen}
           aria-controls="main-navigation"
@@ -70,15 +63,15 @@ export default function Header() {
 
         <nav
           id="main-navigation"
-          className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ''}`}
+          className={cn(styles.nav, isMenuOpen && styles.navOpen)}
           aria-label="Main navigation"
         >
           <ul className={styles.navList} role="list">
-            {navItems.map((item) => (
+            {mainNavItems.map((item) => (
               <li key={item.href} className={styles.navItem}>
                 <Link
                   href={item.href}
-                  className={`${styles.navLink} ${isActive(item.href) ? styles.navLinkActive : ''}`}
+                  className={cn(styles.navLink, isActive(item.href) && styles.navLinkActive)}
                   aria-current={isActive(item.href) ? 'page' : undefined}
                 >
                   {item.label}
